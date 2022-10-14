@@ -15,7 +15,7 @@ const PostElement = ({ item }) => {
           <p className="py-2">{item.description}</p>
           <div>
             <TimeAgo timestamp={item.pubDate} />
-            <a href={item.link} target="_blank">
+            <a href={item.link} target="_blank" rel="noreferrer">
               {" "}
               بیشتر بخوانید
             </a>
