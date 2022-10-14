@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "yekanBakh";
+  src: url("../src/asset/font/YekanBakh.ttf");
+}
+
+h1,
+.error-bundel,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button {
+  font-family: "yekanBakh";
+}
+
+/* ////////////// */
+
+.btn-container {
+  display: flex;
+  flex-direction: "row";
+  align-items: center;
+  padding: 30px 50px;
+  border-radius: 12px;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #bdc0c5;
+  border-radius: 4px;
+  padding: 6px 15px;
+  margin: 0 10px;
+}
+
+.like-active {
+  background-color: #da93ba;
+}
+
+.dislike-active {
+  background-color: #94bae8;
+}
+
+.material-symbols-rounded {
+  font-size: 20px;
+}
+a {
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: 600;
+}
+
+.head {
+  background: rgba(181, 177, 177, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
