@@ -12,7 +12,7 @@ const initialState = {
 }
 
 export const getDataPosts = createAsyncThunk('getpost/post', async () => {
-  const response = await fetch(`${process.env.REACT_APP_API}token=${process.env.REACT_APP_TOKEN}&action=${process.env.REACT_APP_ACTION}`)
+  const response = await fetch(`https://one-api.ir/rss/?token=331759:62d676f9937d93.42051387&action=varzesh3`)
   const item = await response.json();
   return item
 })
