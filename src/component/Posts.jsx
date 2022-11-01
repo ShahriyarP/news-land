@@ -3,7 +3,7 @@ import {
   getDataPosts,
   allDataPosts,
   allDataIsLoading,
-  showErrorPosts,
+  /* showErrorPosts, */
 } from "../stateManagement/posts/postSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -16,7 +16,7 @@ const Posts = () => {
   const dispatch = useDispatch();
   const posts = useSelector(allDataPosts);
   const postsIsLoaing = useSelector(allDataIsLoading);
-  const showError = useSelector(showErrorPosts);
+  /* const showError = useSelector(showErrorPosts); */
 
   useEffect(() => {
     dispatch(getDataPosts());
@@ -26,7 +26,7 @@ const Posts = () => {
     <>
       {postsIsLoaing && <Loading />}
       {!postsIsLoaing && <Header />}
-      {showError}
+      {/* {showError} */}
       {posts.map((item) => (
         <PostElement key={nanoid()} item={item} />
       ))}
