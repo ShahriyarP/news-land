@@ -22,7 +22,7 @@ const postSlice = createSlice({
   initialState,
   extraReducers: (builder) => {
     builder.addCase(getDataPosts.rejected, (state) => {
-      /* state.errorMessage = <div className="error-bundel">خطا در برقراری ارتباط با سرور</div> */
+      state.errorMessage = <div className="error-bundel">خطا در برقراری ارتباط با سرور</div>
       state.isLoading = false
     })
     builder.addCase(getDataPosts.pending, (state) => {
